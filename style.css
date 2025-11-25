@@ -1,3 +1,38 @@
+
 body {
+    display: flex;
     background-color: rgb(36, 36, 139);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 780px;
+    height: 780px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    border: 0;
+}
+  
+.cell {
+    /* 16 cells per row → 960 / 16 = 60px each */
+    width: 47px;
+    height: 47px;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+}
+   
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px
+}
+
+button {
+    background-color: rgb(6, 172, 244);
+    font-size: medium;
+    border-radius: 10%;
 }
